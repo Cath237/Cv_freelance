@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CATHIDE TSAFACK — Développeuse Full Stack & Mobile</title>
+  <meta name="description" content="Portfolio de CATHIDE TSAFACK, développeuse full stack et mobile freelance." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <a href="#hero" class="logo">T.C<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#skills">Compétences</a></li>
+      <li><a href="#projects">Projets</a></li>
+      <li><a href="#contact" class="btn-nav">Me contacter</a></li>
+    </ul>
+    <button class="burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-tag reveal">👋 Bonjour, je suis</p>
+      <h1 class="hero-title reveal">
+        CATHIDE TSAFACK<br>
+        <span class="gradient">Développeuse Full Stack & Mobile</span>
+      </h1>
+      <p class="hero-sub reveal">
+        Je conçois des applications web et mobiles performantes pour startups et PME.
+        Du design à la mise en production, je transforme vos idées en produits.
+      </p>
+      <div class="hero-cta reveal">
+        <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+        <a href="#contact" class="btn btn-ghost">Discutons →</a>
+      </div>
+      <div class="hero-stats reveal">
+        <div><strong>+25</strong><span>projets livrés</span></div>
+        <div><strong>5+</strong><span>années d'exp.</span></div>
+        <div><strong>100%</strong><span>clients satisfaits</span></div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-indicator" aria-label="Descendre">↓</a>
+  </header>
+
+  <!-- À PROPOS -->
+  <section class="section" id="about">
+    <h2 class="section-title reveal"><span>01.</span> À propos</h2>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>
+          Développeuse full stack freelance passionnée, je crée des expériences
+          web et mobiles qui allient <strong>performance</strong>, <strong>design</strong> et
+          <strong>maintenabilité</strong>.
+        </p>
+        <p>
+          J'accompagne mes clients de la conception au déploiement : audit, architecture,
+          développement, tests et mise en production. J'aime les défis techniques et
+          les projets à impact.
+        </p>
+        <ul class="about-list">
+          <li>✅ Livraison dans les délais</li>
+          <li>✅ Code propre & documenté</li>
+          <li>✅ Communication transparente</li>
+          <li>✅ Suivi post-livraison</li>
+        </ul>
+      </div>
+      <div class="about-card reveal">
+        <div class="card-glow"></div>
+        <h3>Stack principale</h3>
+        <div class="chips">
+          <span>React</span><span>Next.js</span><span>TypeScript</span>
+          <span>Node.js</span><span>React Native</span><span>Flutter</span>
+          <span>PostgreSQL</span><span>MongoDB</span><span>Docker</span>
+          <span>AWS</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPÉTENCES -->
+  <section class="section" id="skills">
+    <h2 class="section-title reveal"><span>02.</span> Compétences</h2>
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="skill-icon">🎨</div>
+        <h3>Frontend</h3>
+        <p>React · Next.js · Vue.js · TypeScript · Tailwind CSS</p>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">📱</div>
+        <h3>Mobile</h3>
+        <p>React Native · Flutter · Swift · Kotlin</p>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">⚙️</div>
+        <h3>Backend</h3>
+        <p>Node.js · Python · REST · GraphQL · API design</p>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">🗄️</div>
+        <h3>Bases de données</h3>
+        <p>PostgreSQL · MongoDB · Firebase · Redis</p>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">🚀</div>
+        <h3>DevOps</h3>
+        <p>Docker · CI/CD · AWS · Vercel · GitHub Actions</p>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">🧠</div>
+        <h3>Soft skills</h3>
+        <p>Autonomie · Communication · Gestion de projet</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETS -->
+  <section class="section" id="projects">
+    <h2 class="section-title reveal"><span>03.</span> Projets sélectionnés</h2>
+    <div class="projects-grid">
+
+      <article class="project-card reveal">
+        <div class="project-img" style="background-image:url('https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&q=80')"></div>
+        <div class="project-body">
+          <span class="project-year">2024</span>
+          <h3>App mobile — Fitness</h3>
+          <p>Application de suivi sportif en React Native avec +10k téléchargements.</p>
+          <div class="project-tags"><span>React Native</span><span>Firebase</span></div>
+          <a href="#" class="project-link">Voir le projet →</a>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-img" style="background-image:url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80')"></div>
+        <div class="project-body">
+          <span class="project-year">2024</span>
+          <h3>SaaS — Dashboard analytics</h3>
+          <p>Plateforme SaaS full stack (Next.js + Node + PostgreSQL), chargement -40%.</p>
+          <div class="project-tags"><span>Next.js</span><span>Node.js</span><span>AWS</span></div>
+          <a href="#" class="project-link">Voir le projet →</a>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-img" style="background-image:url('https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80')"></div>
+        <div class="project-body">
+          <span class="project-year">2023</span>
+          <h3>E-commerce — Mode</h3>
+          <p>Site e-commerce responsive, +25% de taux de conversion après refonte.</p>
+          <div class="project-tags"><span>React</span><span>Stripe</span><span>Vercel</span></div>
+          <a href="#" class="project-link">Voir le projet →</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <h2 class="section-title reveal"><span>04.</span> Travaillons ensemble</h2>
+    <p class="contact-sub reveal">
+      Un projet en tête ? Une mission freelance ? Discutons-en.
+    </p>
+    <a href="cathideange38@gmail.com" class="btn btn-primary btn-lg reveal">
+      📩 Envoyer un email
+    </a>
+    <div class="socials reveal">
+      <a href="#" aria-label="GitHub">GitHub</a>
+      <a href="#" aria-label="LinkedIn">LinkedIn</a>
+      <a href="#" aria-label="Malt">Malt</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© <span id="year"></span> CATHIDE TSAFACK — Conçu et développé avec ❤️</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
