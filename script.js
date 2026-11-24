@@ -34,3 +34,42 @@ document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
 // ===== Year auto =====
 document.getElementById('year').textContent = new Date().getFullYear();
+
+// ===== Formspree AJAX (pas de redirection) =====
+const contactForm = document.querySelector('.contact-form');
+
+if (contactForm) {
+  contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(contactForm);
+    const submitBtn = contactForm.querySelector('button[type="submit"]');
+    const originalText = submitBtn.textContent;
+
+    submitBtn.textContent = 'Envoi en cours...';
+    submitBtn.disabled = true;
+
+    try {
+      const response = await fetch(contactForm.action, {
+        method: 'POST',
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        contactForm.innerHTML = `
+          <div class="form-success">
+            <h3>✅ Message envoyé !</h3>
+            <p>Merci pour ton message, je te répondrai très vite.</p>
+          </div>
+        `;
+      } else {
+        throw new Error("Erreur lors de l'envoi");
+      }
+    } catch (error) {
+      alert("Une erreur est survenue. Réessaie ou contacte-moi par email.");
+      submitBtn.textContent = originalText;
+      submitBtn.disabled = false;
+    }
+  });
+}
